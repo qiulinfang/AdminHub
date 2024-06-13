@@ -1,18 +1,23 @@
 <template>
   <div class="flex-container">
-    <div class="column-left">
-      <HelloWorld msg="Vite + Vue"/>
+    <div class="column column-left">
+      <div class="scrollable-content">
+        <SideBar msg="Vite + Vue" />
+      </div>
     </div>
-    <div class="column-right">
-      <HeaderCom></HeaderCom>
-      <BreadCrumb></BreadCrumb>
-      <router-view></router-view>
+    <div class="column column-right">
+      <div class="scrollable-content">
+        <HeaderCom></HeaderCom>
+        <Tab></Tab>
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import SideBar from '../components/SideBar.vue';
+
 
 </script>
 
@@ -34,29 +39,25 @@ import { ref } from 'vue'
 
 .flex-container {
   display: flex;
-  /* 启用 Flexbox 布局 */
-  justify-content: space-between;
-  /* 控制主轴上的元素间距 */
-  flex-wrap: wrap;
-  /* 如果需要，允许元素换行 */
+  height: 100vh;
+}
+.column {
+  overflow-y: auto; /* 启用垂直滚动 */
+  box-sizing: border-box;
 }
 
+/* 隐藏滚动条本身，但仍然允许滚动 */
+::-webkit-scrollbar { 
+    width: 0;  /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 .column-left {
-  flex: none;
-  /* 不允许列拉伸或压缩 */
-  width: fit-content;
-  /* 列宽度适应内容 */
-  padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
 }
 
 .column-right {
   flex: 1;
-  /* 填充剩余空间 */
-  padding: 10px;
-  background-color: #f1f1f1;
-  min-width: 0;
-  /* 确保列可以缩小到 0 宽度 */
+  background-color: #e0e0e0;
 }
 </style>

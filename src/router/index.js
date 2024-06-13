@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import A from '../views/A.vue'
-import B from '../views/B.vue'
-import C from '../views/C.vue'
+import Charts from '../views/charts/Charts.vue'
+import B from '../components/B.vue'
+import C from '../components/C.vue'
 import Login from '../views/Login.vue'
 import Home from '../views/Home.vue'
 
@@ -10,30 +10,30 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-     meta: { requiresAuth: true }
-    
-  },
-  {
-    path: '/A',
-    name: 'A',
-    component: A,
-  },
-  {
-    path: '/B',
-    name: 'B',
-    component: B,
-  },
-  {
-    path: '/C',
-    name: 'C',
-    component: C,
+    meta: { requiresAuth: true },
+    children: [
+      {
+        path: '/Charts',
+        name: 'Charts',
+        component: Charts,
+      },
+      {
+        path: '/B',
+        name: 'B',
+        component: B,
+      },
+      {
+        path: '/C',
+        name: 'C',
+        component: C,
+      },
+    ]
   },
   {
     path: '/Login',
     name: 'Login',
     component: Login,
   },
-
 ]
 
 
