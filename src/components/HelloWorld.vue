@@ -9,8 +9,18 @@
       </template>
       <el-menu-item-group>
         <template #title><span>Group One</span></template>
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
+        <el-menu-item index="1-1">
+          <router-link :to="{ name: 'A',}">Go to A</router-link>
+        </el-menu-item>
+        <el-menu-item index="1-2">
+          <router-link :to="{ name: 'B',}">Go to B</router-link>
+        </el-menu-item>
+        <el-menu-item index="1-3">
+          <router-link :to="{ name: 'C'}">Go to C</router-link>
+        </el-menu-item>
+        <el-menu-item index="1-4">
+          <router-link :to="{ name: 'Login'}">Go to Login</router-link>
+        </el-menu-item>
       </el-menu-item-group>
       <el-menu-item-group title="Group Two">
         <el-menu-item index="1-3">item three</el-menu-item>
