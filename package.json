@@ -12,8 +12,14 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
+    "@tinymce/tinymce-vue": "^6.0.1",
+    "@vueuse/core": "^10.11.0",
     "echarts": "^5.5.0",
     "element-plus": "^2.7.5",
+    "json-editor-vue3": "^1.1.1",
+    "mavon-editor": "^3.0.1",
+    "tinymce": "^7.1.2",
     "unplugin-element-plus": "^0.8.0",
     "vue": "^3.4.21",
     "vuex": "^4.0.2"

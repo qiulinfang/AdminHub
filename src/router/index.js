@@ -1,38 +1,104 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Charts from '../views/charts/Charts.vue'
-import B from '../components/B.vue'
-import C from '../components/C.vue'
-import Login from '../views/Login.vue'
-import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
-    meta: { requiresAuth: true },
+    component: () => import('@/views/Home/Home.vue'),
+    meta: {
+      title: 'Home',
+      breadcrumb: true,
+      requiresAuth: true
+    },
     children: [
       {
-        path: '/Charts',
-        name: 'Charts',
-        component: Charts,
+        path: '/FirstPage',
+        name: 'FirstPage',
+        component: () => import('@/views/Home/FirstPage/FirstPage.vue'),
+        meta: {
+          title: 'FirstPage',
+          breadcrumb: true,
+        },
       },
       {
         path: '/B',
         name: 'B',
-        component: B,
+        component: () => import('@/views/Home/test/B.vue'),
       },
       {
         path: '/C',
         name: 'C',
-        component: C,
+        component: () => import('@/views/Home/test/C.vue'),
+      },
+      {
+        path: '/icons',
+        name: 'icons',
+        component: () => import('@/views/Home/icons/index.vue'),
+        meta: {
+          title: 'icons',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/exportexcel',
+        name: 'exportexcel',
+        component: () => import('@/views/Home/excel/exportexcel.vue'),
+        meta: {
+          title: 'exportexcel',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/uploadexcel',
+        name: 'uploadexcel',
+        component: () => import('@/views/Home/excel/uploadexcel.vue'),
+        meta: {
+          title: 'uploadexcel',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/tinymce',
+        name: 'tinymce',
+        component: () => import('@/views/Home/components-demo/tinymce.vue'),
+        meta: {
+          title: 'tinymce',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/mavonEditor',
+        name: 'mavonEditor',
+        component: () => import('@/views/Home/components-demo/mavonEditor.vue'),
+        meta: {
+          title: 'mavonEditor',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/JsonEditorDemo',
+        name: 'JsonEditorDemo',
+        component: () => import('@/views/Home/components-demo/JsonEditorDemo.vue'),
+        meta: {
+          title: 'JsonEditorDemo',
+          breadcrumb: true,
+        },
+      },
+      {
+        path: '/404',
+        name: '404',
+        component: () => import('@/views/Home/error-page/404.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
       },
     ]
   },
   {
     path: '/Login',
     name: 'Login',
-    component: Login,
+    component: () => import('@/views/Login/Login.vue'),
   },
 ]
 
