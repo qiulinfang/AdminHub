@@ -6,85 +6,80 @@
       </el-icon>
       <router-link :to="{ name: 'FirstPage', }">首页</router-link>
     </el-menu-item>
-    <el-sub-menu index="3">
-      <template #title>
-        <el-icon>
-          <location />
-        </el-icon>
-        <span>权限测试页</span>
-      </template>
-      <el-menu-item index="3-1">
-        <router-link :to="{ name: 'B', }">页面权限</router-link>
-      </el-menu-item>
-      <el-menu-item index="3-2">
-        <router-link :to="{ name: 'B', }">指令权限</router-link>
-      </el-menu-item>
-      <el-menu-item index="3-3">
-        <router-link :to="{ name: 'C' }">角色权限</router-link>
-      </el-menu-item>
-    </el-sub-menu>
-    <el-menu-item index="4">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>引导页</template>
-    </el-menu-item>
-    <el-menu-item index="6">
-      <template #title>
-        <el-icon>
-          <setting />
-        </el-icon>
-        <router-link :to="{ name: 'icons', }">图标</router-link>
-      </template>
-    </el-menu-item>
+    
     <el-sub-menu index="7">
       <template #title>
         <el-icon>
           <location />
         </el-icon>
-        <span>组件</span>
+        <span>商品</span>
       </template>
       <el-menu-item index="7-1">
-        <router-link :to="{ name: 'tinymce', }">富文本编辑器</router-link>
+        <router-link :to="{ name: 'Product List', }">商品列表</router-link>
       </el-menu-item>
       <el-menu-item index="7-2">
-        <router-link :to="{ name: 'mavonEditor', }">Markdown</router-link>
+        <router-link :to="{ name: 'Add Product', }">添加商品</router-link>
       </el-menu-item>
       <el-menu-item index="7-3">
-        <router-link :to="{ name: 'JsonEditorDemo' }">Json编辑器</router-link>
+        <router-link :to="{ name: 'Product Category' }">商品分类</router-link>
       </el-menu-item>
       <el-menu-item index="7-4">
-        <router-link :to="{ name: 'C' }">Splitpane</router-link>
+        <router-link :to="{ name: 'Product Type' }">商品类型</router-link>
       </el-menu-item>
       <el-menu-item index="7-5">
-        <router-link :to="{ name: 'C' }">头像上传</router-link>
+        <router-link :to="{ name: 'Brand Management' }">品牌管理 </router-link>
+      </el-menu-item>
+
+    </el-sub-menu>
+    <el-sub-menu>
+      <template #title>
+        <el-icon>
+          <location />
+        </el-icon>
+        <span>订单</span>
+      </template>
+      <el-menu-item index="7-13">
+        <router-link :to="{ name: 'Order List' }">订单列表</router-link>
+      </el-menu-item>
+      <el-menu-item index="7-13">
+        <router-link :to="{ name: 'Order Settings' }">订单设置 </router-link>
       </el-menu-item>
       <el-menu-item index="7-6">
-        <router-link :to="{ name: 'C' }">Dropzone</router-link>
+        <router-link :to="{ name: 'Return Request Handling' }">退货申请处理</router-link>
       </el-menu-item>
       <el-menu-item index="7-7">
-        <router-link :to="{ name: 'C' }">Sticky</router-link>
+        <router-link :to="{ name: 'Return Reason Settings' }">退货原因设置</router-link>
       </el-menu-item>
+      
+    </el-sub-menu>
+ 
+    <el-sub-menu index="10">
+      <template #title>
+        <el-icon>
+          <location />
+        </el-icon>
+        <span>营销</span>
+      </template>
       <el-menu-item index="7-8">
-        <router-link :to="{ name: 'C' }">Count To</router-link>
+        <router-link :to="{ name: 'Flash Sale List' }">秒杀活动列表</router-link>
       </el-menu-item>
       <el-menu-item index="7-9">
-        <router-link :to="{ name: 'C' }">小组件</router-link>
+        <router-link :to="{ name: 'Coupon List' }">优惠券列表</router-link>
       </el-menu-item>
       <el-menu-item index="7-10">
-        <router-link :to="{ name: 'C' }">返回顶部</router-link>
+        <router-link :to="{ name: 'Brands Recommendation' }">品牌推荐</router-link>
       </el-menu-item>
       <el-menu-item index="7-11">
-        <router-link :to="{ name: 'C' }">拖拽 Dialog</router-link>
+        <router-link :to="{ name: 'New Arrival Recommendations' }">新品推荐</router-link>
       </el-menu-item>
       <el-menu-item index="7-12">
-        <router-link :to="{ name: 'C' }">拖拽Select</router-link>
+        <router-link :to="{ name: 'Popularity Recommendations' }">人气推荐</router-link>
       </el-menu-item>
       <el-menu-item index="7-13">
-        <router-link :to="{ name: 'C' }">列表拖转</router-link>
+        <router-link :to="{ name: 'Special Topic Recommendations' }">专题推荐</router-link>
       </el-menu-item>
       <el-menu-item index="7-13">
-        <router-link :to="{ name: 'C' }">可拓展看板</router-link>
+        <router-link :to="{ name: 'Advertisement List' }">广告列表</router-link>
       </el-menu-item>
     </el-sub-menu>
     <el-sub-menu>
@@ -92,114 +87,23 @@
         <el-icon>
           <location />
         </el-icon>
-        <span>图表</span>
+        <span>权限</span>
       </template>
       <el-menu-item index="7-13">
-        <router-link :to="{ name: 'C' }">键盘图表</router-link>
+        <router-link :to="{ name: 'User List' }">用户列表</router-link>
       </el-menu-item>
       <el-menu-item index="7-13">
-        <router-link :to="{ name: 'C' }">折线图</router-link>
+        <router-link :to="{ name: 'Role List' }">角色列表 </router-link>
       </el-menu-item>
-      <el-menu-item index="7-13">
-        <router-link :to="{ name: 'C' }">混合图表</router-link>
+      <el-menu-item index="7-6">
+        <router-link :to="{ name: 'Menu List' }">菜单列表</router-link>
       </el-menu-item>
+      <el-menu-item index="7-7">
+        <router-link :to="{ name: 'Resource List' }">资源列表</router-link>
+      </el-menu-item>
+      
     </el-sub-menu>
-    <el-menu-item index="8">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>图表</template>
-    </el-menu-item>
-    <el-menu-item index="9">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>路由嵌套</template>
-    </el-menu-item>
-    <el-sub-menu index="10">
-      <template #title>
-        <el-icon>
-          <location />
-        </el-icon>
-        <span>Table</span>
-      </template>
-      <el-menu-item index="10-1">
-        <router-link :to="{ name: 'B', }">动态Table</router-link>
-      </el-menu-item>
-      <el-menu-item index="10-2">
-        <router-link :to="{ name: 'B', }">拖拽Table</router-link>
-      </el-menu-item>
-      <el-menu-item index="10-3">
-        <router-link :to="{ name: 'C' }">Table内编辑</router-link>
-      </el-menu-item>
-      <el-menu-item index="10-3">
-        <router-link :to="{ name: 'C' }">综合 Table</router-link>
-      </el-menu-item>
-    </el-sub-menu>
-    <el-menu-item index="11">
-      <template #title>
-        <el-icon>
-          <setting />
-        </el-icon>
-        <router-link :to="{ name: '404' }">错误页面</router-link>
-      </template>
-    </el-menu-item>
-    <el-menu-item index="12">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>错误日志</template>
-    </el-menu-item>
-    <el-sub-menu index="13">
-      <template #title>
-        <el-icon>
-          <location />
-        </el-icon>
-        <span>Excel</span>
-      </template>
-      <el-menu-item index="13-1">
-        <router-link :to="{ name: 'exportexcel', }">导出Excel</router-link>
-      </el-menu-item>
-      <el-menu-item index="13-2">
-        <router-link :to="{ name: 'B', }">导出已选择项</router-link>
-      </el-menu-item>
-      <el-menu-item index="13-3">
-        <router-link :to="{ name: 'C' }">导出 多级表头</router-link>
-      </el-menu-item>
-      <el-menu-item index="13-4">
-        <router-link :to="{ name: 'uploadexcel' }">上传Excel</router-link>
-      </el-menu-item>
-    </el-sub-menu>
-    <el-menu-item index="14">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>Zip</template>
-    </el-menu-item>
-    <el-menu-item index="15">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>PDF</template>
-    </el-menu-item>
-    <el-menu-item index="16">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>换肤</template>
-    </el-menu-item>
-    <el-menu-item index="17">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>Clipboard</template>
-    </el-menu-item>
-    <el-menu-item index="18">
-      <el-icon>
-        <setting />
-      </el-icon>
-      <template #title>国际化</template>
-    </el-menu-item>
+  
   </el-menu>
 </template>
 

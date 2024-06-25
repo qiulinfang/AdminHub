@@ -21,73 +21,181 @@ const routes = [
         },
       },
       {
-        path: '/B',
-        name: 'B',
-        component: () => import('@/views/Home/test/B.vue'),
+        path: '/Advertisement List',
+        name: 'Advertisement List',
+        component: () => import('@/views/Marketing/Advertisement List.vue'),
       },
       {
-        path: '/C',
-        name: 'C',
-        component: () => import('@/views/Home/test/C.vue'),
+        path: '/Brands Recommendation',
+        name: 'Brands Recommendation',
+        component: () => import('@/views/Marketing/Brands Recommendation.vue'),
       },
       {
-        path: '/icons',
-        name: 'icons',
-        component: () => import('@/views/Home/icons/index.vue'),
+        path: '/Coupon List',
+        name: 'Coupon List',
+        component: () => import('@/views/Marketing/Coupon List.vue'),
         meta: {
           title: 'icons',
           breadcrumb: true,
         },
       },
       {
-        path: '/exportexcel',
-        name: 'exportexcel',
-        component: () => import('@/views/Home/excel/exportexcel.vue'),
+        path: '/Flash Sale List',
+        name: 'Flash Sale List',
+        component: () => import('@/views/Marketing/Flash Sale List.vue'),
         meta: {
           title: 'exportexcel',
           breadcrumb: true,
         },
       },
       {
-        path: '/uploadexcel',
-        name: 'uploadexcel',
-        component: () => import('@/views/Home/excel/uploadexcel.vue'),
+        path: '/New Arrival Recommendations',
+        name: 'New Arrival Recommendations',
+        component: () => import('@/views/Marketing/New Arrival Recommendations.vue'),
         meta: {
           title: 'uploadexcel',
           breadcrumb: true,
         },
       },
       {
-        path: '/tinymce',
-        name: 'tinymce',
-        component: () => import('@/views/Home/components-demo/tinymce.vue'),
+        path: '/Popularity Recommendations',
+        name: 'Popularity Recommendations',
+        component: () => import('@/views/Marketing/Popularity Recommendations.vue'),
         meta: {
           title: 'tinymce',
           breadcrumb: true,
         },
       },
       {
-        path: '/mavonEditor',
-        name: 'mavonEditor',
-        component: () => import('@/views/Home/components-demo/mavonEditor.vue'),
+        path: '/Special Topic Recommendations',
+        name: 'Special Topic Recommendations',
+        component: () => import('@/views/Marketing/Special Topic Recommendations.vue'),
         meta: {
           title: 'mavonEditor',
           breadcrumb: true,
         },
       },
       {
-        path: '/JsonEditorDemo',
-        name: 'JsonEditorDemo',
-        component: () => import('@/views/Home/components-demo/JsonEditorDemo.vue'),
+        path: '/Order List',
+        name: 'Order List',
+        component: () => import('@/views/Order/Order List.vue'),
         meta: {
           title: 'JsonEditorDemo',
           breadcrumb: true,
         },
       },
       {
-        path: '/404',
-        name: '404',
-        component: () => import('@/views/Home/error-page/404.vue'),
+        path: '/Order Settings',
+        name: 'Order Settings',
+        component: () => import('@/views/Order/Order Settings.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Return Reason Settings',
+        name: 'Return Reason Settings',
+        component: () => import('@/views/Order/Return Reason Settings.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Return Request Handling',
+        name: 'Return Request Handling',
+        component: () => import('@/views/Order/Return Request Handling.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Menu List',
+        name: 'Menu List',
+        component: () => import('@/views/Permissions/Menu List.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Resource List',
+        name: 'Resource List',
+        component: () => import('@/views/Permissions/Resource List.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Role List',
+        name: 'Role List',
+        component: () => import('@/views/Permissions/Role List.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/User List',
+        name: 'User List',
+        component: () => import('@/views/Permissions/User List.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Product List',
+        name: 'Product List',
+        component: () => import('@/views/Product/Product List.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Add Product',
+        name: 'Add Product',
+        component: () => import('@/views/Product/Add Product.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Brand Management',
+        name: 'Brand Management',
+        component: () => import('@/views/Product/Brand Management.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Product Category',
+        name: 'Product Category',
+        component: () => import('@/views/Product/Product Category.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/Product Type',
+        name: 'Product Type',
+        component: () => import('@/views/Product/Product Type.vue'),
+        meta: {
+          title: '404',
+          breadcrumb: false,
+        },
+      },
+      {
+        path: '/ProductList',
+        name: 'ProductList',
+        component: () => import('@/views/Product/ProductList.vue'),
         meta: {
           title: '404',
           breadcrumb: false,
