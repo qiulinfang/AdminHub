@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -12,30 +12,32 @@ const routes = [
     },
     children: [
       {
-        path: '/FirstPage',
-        name: 'FirstPage',
-        component: () => import('@/views/Home/FirstPage/FirstPage.vue'),
-        meta: {
-          title: 'FirstPage',
-          breadcrumb: true,
-        },
-      },
-      {
         path: '/Advertisement List',
         name: 'Advertisement List',
         component: () => import('@/views/Marketing/Advertisement List.vue'),
+        meta: {
+          title: 'Advertisement List',
+          breadcrumb: true,
+          requiresAuth: true
+        },
+
       },
       {
         path: '/Brands Recommendation',
         name: 'Brands Recommendation',
         component: () => import('@/views/Marketing/Brands Recommendation.vue'),
+        meta: {
+          title: 'Brands Recommendation',
+          breadcrumb: true,
+          requiresAuth: true
+        },
       },
       {
         path: '/Coupon List',
         name: 'Coupon List',
         component: () => import('@/views/Marketing/Coupon List.vue'),
         meta: {
-          title: 'icons',
+          title: 'Coupon List',
           breadcrumb: true,
         },
       },
@@ -44,7 +46,7 @@ const routes = [
         name: 'Flash Sale List',
         component: () => import('@/views/Marketing/Flash Sale List.vue'),
         meta: {
-          title: 'exportexcel',
+          title: 'Flash Sale List',
           breadcrumb: true,
         },
       },
@@ -53,7 +55,7 @@ const routes = [
         name: 'New Arrival Recommendations',
         component: () => import('@/views/Marketing/New Arrival Recommendations.vue'),
         meta: {
-          title: 'uploadexcel',
+          title: 'New Arrival Recommendations',
           breadcrumb: true,
         },
       },
@@ -62,7 +64,7 @@ const routes = [
         name: 'Popularity Recommendations',
         component: () => import('@/views/Marketing/Popularity Recommendations.vue'),
         meta: {
-          title: 'tinymce',
+          title: 'Popularity Recommendations',
           breadcrumb: true,
         },
       },
@@ -71,7 +73,7 @@ const routes = [
         name: 'Special Topic Recommendations',
         component: () => import('@/views/Marketing/Special Topic Recommendations.vue'),
         meta: {
-          title: 'mavonEditor',
+          title: 'Special Topic Recommendations',
           breadcrumb: true,
         },
       },
@@ -80,7 +82,7 @@ const routes = [
         name: 'Order List',
         component: () => import('@/views/Order/Order List.vue'),
         meta: {
-          title: 'JsonEditorDemo',
+          title: 'Order List',
           breadcrumb: true,
         },
       },
@@ -89,8 +91,8 @@ const routes = [
         name: 'Order Settings',
         component: () => import('@/views/Order/Order Settings.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Order Settings',
+          breadcrumb: true,
         },
       },
       {
@@ -98,8 +100,8 @@ const routes = [
         name: 'Return Reason Settings',
         component: () => import('@/views/Order/Return Reason Settings.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Return Reason Settings',
+          breadcrumb: true,
         },
       },
       {
@@ -107,8 +109,8 @@ const routes = [
         name: 'Return Request Handling',
         component: () => import('@/views/Order/Return Request Handling.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Return Request Handling',
+          breadcrumb: true,
         },
       },
       {
@@ -116,8 +118,8 @@ const routes = [
         name: 'Menu List',
         component: () => import('@/views/Permissions/Menu List.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Menu List',
+          breadcrumb: true,
         },
       },
       {
@@ -125,8 +127,8 @@ const routes = [
         name: 'Resource List',
         component: () => import('@/views/Permissions/Resource List.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Resource List',
+          breadcrumb: true,
         },
       },
       {
@@ -134,8 +136,8 @@ const routes = [
         name: 'Role List',
         component: () => import('@/views/Permissions/Role List.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Role List',
+          breadcrumb: true,
         },
       },
       {
@@ -143,8 +145,8 @@ const routes = [
         name: 'User List',
         component: () => import('@/views/Permissions/User List.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'User List',
+          breadcrumb: true,
         },
       },
       {
@@ -152,8 +154,8 @@ const routes = [
         name: 'Product List',
         component: () => import('@/views/Product/Product List.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Product List',
+          breadcrumb: true,
         },
       },
       {
@@ -161,8 +163,8 @@ const routes = [
         name: 'Add Product',
         component: () => import('@/views/Product/Add Product.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Add Product',
+          breadcrumb: true,
         },
       },
       {
@@ -170,8 +172,8 @@ const routes = [
         name: 'Brand Management',
         component: () => import('@/views/Product/Brand Management.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Brand Management',
+          breadcrumb: true,
         },
       },
       {
@@ -179,8 +181,8 @@ const routes = [
         name: 'Product Category',
         component: () => import('@/views/Product/Product Category.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Product Category',
+          breadcrumb: true,
         },
       },
       {
@@ -188,8 +190,8 @@ const routes = [
         name: 'Product Type',
         component: () => import('@/views/Product/Product Type.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'Product Type',
+          breadcrumb: true,
         },
       },
       {
@@ -197,8 +199,8 @@ const routes = [
         name: 'ProductList',
         component: () => import('@/views/Product/ProductList.vue'),
         meta: {
-          title: '404',
-          breadcrumb: false,
+          title: 'ProductList',
+          breadcrumb: true,
         },
       },
     ]
@@ -207,12 +209,16 @@ const routes = [
     path: '/Login',
     name: 'Login',
     component: () => import('@/views/Login/Login.vue'),
+    meta: {
+      title: 'Login',
+      breadcrumb: true,
+    },
   },
 ]
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 

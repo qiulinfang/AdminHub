@@ -4,7 +4,7 @@
       <el-icon>
         <location />
       </el-icon>
-      <router-link :to="{ name: 'FirstPage', }">首页</router-link>
+      <router-link :to="{ name: 'Product List', }">商品列表</router-link>
     </el-menu-item>
     
     <el-sub-menu index="7">
@@ -50,9 +50,9 @@
       <el-menu-item index="7-7">
         <router-link :to="{ name: 'Return Reason Settings' }">退货原因设置</router-link>
       </el-menu-item>
-      
+
     </el-sub-menu>
- 
+
     <el-sub-menu index="10">
       <template #title>
         <el-icon>
@@ -101,9 +101,9 @@
       <el-menu-item index="7-7">
         <router-link :to="{ name: 'Resource List' }">资源列表</router-link>
       </el-menu-item>
-      
+
     </el-sub-menu>
-  
+
   </el-menu>
 </template>
 
