@@ -1,120 +1,109 @@
 {
-  "posts": [
+  "productCategory": [
     {
-      "id": 1,
-      "title": "json server post 1"
+      "id": "Alice Johnson",
+      "age": 28,
+      "action": "Edit",
+      "custom_input": "Sample text 1",
+      "brand_manufacturer": "Apple"
     },
     {
-      "id": 2,
-      "title": "json server post 2"
+      "id": "Bob Smith",
+      "age": 35,
+      "action": "View",
+      "custom_input": "Custom data 2",
+      "brand_manufacturer": "Samsung"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Carolyn White",
+      "age": "ssss",
+      "action": "",
+      "custom_input": "",
+      "brand_manufacturer": ""
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "David Brown",
+      "age": 31,
+      "action": "Edit",
+      "custom_input": "User note 4",
+      "brand_manufacturer": "Microsoft"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Evelyn Garcia",
+      "age": 25,
+      "action": "View",
+      "custom_input": "Additional details",
+      "brand_manufacturer": "Lenovo"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Henry Wilson",
+      "age": 33,
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "Asus"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Isabella Martinez",
+      "age": 32,
+      "action": "Edit",
+      "custom_input": "More info",
+      "brand_manufacturer": "LG"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Jack Taylor",
+      "age": 27,
+      "action": "View",
+      "custom_input": "",
+      "brand_manufacturer": "Google"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "asdasd",
+      "age": "",
+      "action": "",
+      "custom_input": "",
+      "brand_manufacturer": ""
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "方秋林",
+      "age": "24",
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "Microsoft"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "何慧琳",
+      "age": "24",
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "Microsoft"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "刘思豪",
+      "age": "24",
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "水电费"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "王者荣耀",
+      "age": "24",
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "水电费"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "纪如燕",
+      "age": "24",
+      "action": "Delete",
+      "custom_input": "Notes here",
+      "brand_manufacturer": "水电费"
     },
     {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
-    },
-    {
-      "id": 3,
-      "title": "json server post 1"
+      "id": "Alice Johnson22",
+      "age": "24",
+      "action": "",
+      "custom_input": "",
+      "brand_manufacturer": ""
     }
   ],
   "comments": [
@@ -125,6 +114,6 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "id": "typicode"
   }
 }

@@ -12,6 +12,17 @@ const routes = [
     },
     children: [
       {
+        path: '/instrumentPanel',
+        name: 'instrumentPanel',
+        component: () => import('@/views/instrument panel/instrumentPanel.vue'),
+        meta: {
+          title: 'instrumentPanel',
+          breadcrumb: true,
+          requiresAuth: true
+        },
+
+      },
+      {
         path: '/Advertisement List',
         name: 'Advertisement List',
         component: () => import('@/views/Marketing/Advertisement List.vue'),

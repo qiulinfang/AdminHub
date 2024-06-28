@@ -4,7 +4,7 @@
       <el-icon>
         <location />
       </el-icon>
-      <router-link :to="{ name: 'Product List', }">商品列表</router-link>
+      <router-link :to="{ name: 'instrumentPanel', }">仪表盘</router-link>
     </el-menu-item>
     
     <el-sub-menu index="7">
